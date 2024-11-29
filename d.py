@@ -36,7 +36,7 @@ def api_udp_flood():
     try:
         # ตรวจสอบว่าระยะเวลาเป็นตัวเลข
         duration = int(duration)
-        if duration < 1 or duration > 300:
+        if duration < 1 or duration > 1200:
             return jsonify({"error": "Time must be between 1 and 300 seconds."}), 400
 
         # เริ่มต้นการโจมตีใน Thread ใหม่
